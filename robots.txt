@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://shichenzhang.me/sitemap.xml
