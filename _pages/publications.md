@@ -8,7 +8,7 @@ nav_order: 2
 show_page_title: false
 _styles: >
   .container[role="main"] {
-    max-width: 1200px;
+    max-width: 1080px;
   }
 ---
 
