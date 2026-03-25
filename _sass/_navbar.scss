@@ -149,43 +149,120 @@
   }
 }
 
+@media (max-width: 575.98px) {
+  body.mobile-nav-open {
+    overflow: hidden;
+  }
+
+  .navbar {
+    background-color: var(--global-bg-color);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .navbar.navbar-light {
+    .navbar-brand,
+    .navbar-toggler {
+      position: relative;
+      z-index: 1001;
+    }
+
+    .navbar-collapse {
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      display: none !important;
+      background-color: var(--global-bg-color);
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      padding: 4.5rem 0.5rem 2rem;
+      overflow-y: auto;
+      transition: none !important;
+    }
+
+    .navbar-collapse.show,
+    .navbar-collapse.collapsing {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+      height: auto !important;
+      transition: none !important;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+      font-size: 1.25rem;
+      padding-top: 0rem;
+      padding-bottom: 0rem;
+    }
+
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      flex-wrap: nowrap;
+      gap: 2rem;
+    }
+  }
+
+  .navbar-toggler .toggler-icon {
+    transition: none;
+  }
+}
+
 .navbar-toggler {
-  .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    background-color: var(--global-text-color);
-    border-radius: 1px;
-    margin-bottom: 4px;
-    transition: all 0.2s;
+  border: 0;
+  padding: 0;
+  color: var(--global-text-color);
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
 
-  .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
+  .navbar-toggler-icons {
+    position: relative;
+    display: inline-flex;
+    width: 1.35rem;
+    height: 1.35rem;
+    align-items: center;
+    justify-content: center;
   }
 
-  .middle-bar {
+  .toggler-icon {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.25;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: none;
+  }
+
+  .toggler-menu {
     opacity: 0;
+    transform: scale(0.92);
   }
 
-  .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
+  .toggler-close {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
 .navbar-toggler.collapsed {
-  .top-bar {
-    transform: rotate(0);
-  }
-
-  .middle-bar {
+  .toggler-menu {
     opacity: 1;
+    transform: scale(1);
   }
 
-  .bottom-bar {
-    transform: rotate(0);
+  .toggler-close {
+    opacity: 0;
+    transform: scale(0.92);
   }
 }
 

@@ -30,12 +30,20 @@
         aria-label="Toggle navigation"
       >
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar top-bar"></span>
-        <span class="icon-bar middle-bar"></span>
-        <span class="icon-bar bottom-bar"></span>
+        <span class="navbar-toggler-icons" aria-hidden="true">
+          <svg class="toggler-icon toggler-menu" viewBox="0 0 24 24" focusable="false">
+            <path d="M4 12h16"></path>
+            <path d="M4 6h16"></path>
+            <path d="M4 18h16"></path>
+          </svg>
+          <svg class="toggler-icon toggler-close" viewBox="0 0 24 24" focusable="false">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </span>
       </button>
 
-      <div class="collapse navbar-collapse text-right" id="navbarNav">
+      <div class="collapse navbar-collapse text-left text-sm-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
           {% for page in site.pages %}
             {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
