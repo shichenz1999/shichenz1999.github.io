@@ -32,11 +32,40 @@
 <!-- Fonts & Icons -->
 <link defer rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
 <link defer rel="stylesheet" href="{{ '/assets/css/scholar-icons.css' | relative_url | bust_file_cache }}">
+<!--
 <link
   defer
   rel="stylesheet"
   type="text/css"
   href="{{ site.third_party_libraries.google_fonts.url.fonts }}"
+>
+-->
+<link
+  rel="preload"
+  href="{{ '/assets/fonts/instrument-sans/InstrumentSans-400.ttf' | relative_url | bust_file_cache }}"
+  as="font"
+  type="font/ttf"
+  crossorigin
+>
+<link
+  rel="preload"
+  href="{{ '/assets/fonts/instrument-sans/InstrumentSans-500.ttf' | relative_url | bust_file_cache }}"
+  as="font"
+  type="font/ttf"
+  crossorigin
+>
+<link
+  rel="preload"
+  href="{{ '/assets/fonts/instrument-sans/InstrumentSans-600.ttf' | relative_url | bust_file_cache }}"
+  as="font"
+  type="font/ttf"
+  crossorigin
+>
+<link
+  defer
+  rel="stylesheet"
+  type="text/css"
+  href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
 >
 
 <!-- Code Syntax Highlighting -->

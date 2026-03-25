@@ -55,8 +55,52 @@ ul.task-list input[type="checkbox"] {
 
 // Profile
 
+.about-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 30%) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+
+  .profile {
+    width: 100%;
+    margin: 0;
+  }
+
+  .clearfix {
+    min-width: 0;
+  }
+
+  .clearfix ul {
+    margin-left: 0.35rem;
+    padding-left: 1.35rem;
+  }
+
+  .clearfix li + li {
+    margin-top: 0.45rem;
+  }
+
+  &.profile-right {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 30%);
+
+    .profile {
+      order: 2;
+    }
+
+    .clearfix {
+      order: 1;
+    }
+  }
+}
+
 .profile {
   width: 100%;
+  margin-bottom: 1rem;
+
+  figure {
+    margin: 0;
+    border-radius: 20px;
+    overflow: hidden;
+  }
 
   .more-info {
     margin-bottom: 5px;
@@ -71,11 +115,11 @@ ul.task-list input[type="checkbox"] {
 }
 
 .profile.float-right {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .profile.float-left {
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 @media (min-width: 576px) {
@@ -86,6 +130,22 @@ ul.task-list input[type="checkbox"] {
       p {
         display: block;
       }
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    .profile,
+    .clearfix {
+      order: initial;
+    }
+
+    &.profile-right {
+      grid-template-columns: 1fr;
     }
   }
 }

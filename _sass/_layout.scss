@@ -8,6 +8,8 @@ body {
   padding-bottom: 70px;
   color: var(--global-text-color);
   background-color: var(--global-bg-color);
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-weight: 400;
 
   h1,
   h2,
@@ -16,6 +18,8 @@ body {
   h5,
   h6 {
     scroll-margin-top: 66px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
   }
 }
 
