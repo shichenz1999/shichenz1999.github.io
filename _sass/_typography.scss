@@ -46,10 +46,10 @@ table {
 
 a,
 table.table a {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-text-color);
     text-decoration: underline;
   }
 
@@ -141,5 +141,19 @@ blockquote {
     h6 {
       color: var(--global-danger-block-title);
     }
+  }
+}
+
+/* Inline links inside body text: same color as text, subtle underline */
+[role="main"] p a:not(.btn),
+[role="main"] li a:not(.btn),
+[role="main"] td a:not(.btn) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--global-text-color-light);
+  text-underline-offset: 3px;
+
+  &:hover {
+    text-decoration-color: var(--global-text-color);
   }
 }

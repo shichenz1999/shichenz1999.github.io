@@ -25,11 +25,8 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am Shichen, a first year MS student in Computer Science at NYU. Previously, I studied photography and video at School of Visual Arts. Before that, I earned a bachelor’s degree in philosophy from Macalester College, where I studied philosophy of mind and consciousness.
+I am an MS student in Computer Science at NYU and a member of the [NYU AI4CE Lab](https://ai4ce.github.io/), advised by [Chen Feng](https://engineering.nyu.edu/faculty/chen-feng) and [Jing Zhang](https://jingz6676.github.io/).
 
-My research interests lie in developing scalable and generalizable self-supervised learning paradigms for foundation models across modalities such as vision and video, beyond language. I am interested in how the learned representations can be used for perception, planning, and decision-making.
+I am interested in world models, representation learning, generative modeling, and self-supervised reinforcement learning. My goal is to build agents that understand the physical world.
 
-Research questions I am interested in:
-
-- How can we design scalable and generalizable unsupervised learning paradigms that learn representations transferable across diverse visual tasks?
-- How can models leverage imagination to improve planning and decision-making?
+Previously, I studied photography and video at the School of Visual Arts, and before that I earned a bachelor’s degree in philosophy from Macalester College.

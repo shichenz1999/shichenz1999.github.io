@@ -10,7 +10,7 @@
   --global-code-bg-color: #f2ece4;
   --global-text-color: #3b3128;
   --global-text-color-light: #877a6f;
-  --global-theme-color: #96603a;
+  --global-theme-color: #3b3128;
   --global-hover-color: #6f675f;
   --global-hover-text-color: #faf9f5;
   --global-footer-bg-color: #ddd3c7;
@@ -80,7 +80,7 @@ html[data-theme="dark"] {
   --global-code-bg-color: #{v.$code-bg-color-dark};
   --global-text-color: #{v.$grey-color-light};
   --global-text-color-light: #{v.$grey-color};
-  --global-theme-color: #{v.$cyan-color};
+  --global-theme-color: #{v.$grey-color-light};
   --global-hover-color: #{v.$cyan-color};
   --global-hover-text-color: #{v.$white-color};
   --global-footer-bg-color: #{v.$grey-color-light};
